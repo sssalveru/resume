@@ -1,0 +1,176 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=,leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Sampreeth Salveru}} \\
+  \href{https://www.linkedin.com/in/sampreeth-salveru/}{https://www.linkedin.com/in/sampreeth-salveru/} & \href{mailto:sampreethsalveru@gmail.com}{sampreethsalveru@gmail.com} \\
+  \href{https://github.com/sssalveru}{https://github.com/sssalveru} & +1-209-676-7344
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Barbara}{Santa Barbara, CA}
+      {Bachelor of Science in Statistics and Data Science}{Sept. 2017 -- Jun. 2021}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: }
+          {Statistical Data Science with Python; Principles of Data Science with R; Statistical Modeling with SAS; Bayesian Data Analysis; Regression Analysis; Time Series; Probability and Statistics I/II/III}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Bayer Pharmaceuticals}{Berkeley, CA}
+      {Statistical Analysis Intern/Co-op}{Jun. 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{}{Assisted senior staff in performing statistical analysis and trend analysis of manufacturing data to demonstrate process consistency and capability}
+        \resumeItem{}{Used statistical tools to quantitatively detect problems within the drug manufacturing process, identify and document root causes}
+        \resumeItem{}{Built an interactive dashboard for various process parameters and quality attributes using plotly}
+        \resumeItem{}{Built machine learning models to preemptively identify opportunities to optimize processes that may increase quality reliability}
+        \resumeItem{}{Used knowledge management systems such as Discoverant and other data analytics}
+        \resumeItem{}{Received professional training in Good Manufacturing Practices and laboratory Standard Operating Procedures}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+    % \resumeSubSubheading
+    % {Software Engineer I}{Oct 2014 - Sep 2016}
+    % \resumeItemListStart
+    %     \resumeItem{Apache Beam}
+    %      {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    % \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Forecasting CPI for All Urban Consumers: Apparel in U.S. City Average} 
+      {\\This dataset is for a market basket of apparel items for all urban consumers in the U.S city average from 1990 to 2019. Using this data set, the goal was to forecast the CPI-U for apparel 12 months into the future using Box-Jenkings methodology and seasonal autoregressive integrated moving average (SARIMA) models.}
+    \resumeSubItem{Regression Analysis on Bike Sharing}
+      {\\Analyzed the daily count of rental bikes for casual users between the years 2011 and 2012 in the Capital bikeshare system in Washington, D.C.. Determined which attributes of the data set could be used to build a linear regression model to predict the number of casual riders.}
+    \resumeSubItem{Housing Price Prediction}
+      {\\Created a machine learning model to estimate the pricing
+        of houses in California. Measured performance of model, tuned model and parameters for better performance}
+    \resumeSubItem{Exploratory Analysis on Forest Fires in Brazil}
+      {\\Assessed the evolution of fires over the years as well as the regions where they were
+        concentrated}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Programming: }{Python, R, SQL, SAS, Javascript, C\verb!++!}
+     \\
+     \textbf{Statistics: }{Regression, Confidence Intervals, Hypothesis Testing}
+     \\
+     \textbf{Machine Learning: }{Classification, Regression, Clustering, Feature Engineering, Data scraping, Data cleaning, data visualization (e.g. matplotlib, seaborn, plotly)}
+     \hfill
+     \textbf{}{}
+    }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Activities}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Science Club @ UCSB}{Santa Barbara, CA}
+      {Member}{Sept. 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Club to help members learn, create, and share in the realm of Data Science}
+        \resumeItem{}
+          {Collaborated with other members to create and share personal projects}
+        \resumeItem{}
+          {Used Datacamp and Udemy to learn more Python, R, and SQL}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd    
+
+
+%-------------------------------------------
+\end{document}
